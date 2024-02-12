@@ -1,4 +1,4 @@
-public class Canario extends Ave{
+public class Canario extends Ave implements Volar{
 
     @Override
     public void makeSound(){
