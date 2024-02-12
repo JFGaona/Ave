@@ -1,4 +1,4 @@
-public class Gallina extends Ave{
+public class Gallina extends Ave implements Volar{
 
     @Override
     public void makeSound(){
