@@ -5,4 +5,8 @@ public class Gallina extends Ave{
         System.out.println("Grasna");
     }
 
+    @Override
+    public void vuela() {
+        System.out.println("vuela con alas");
+    }
 }
