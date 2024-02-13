@@ -1,12 +1,13 @@
-public class Gallina extends Ave implements Volar{
+import java.util.logging.Logger;
 
-    @Override
-    public void makeSound(){
-        System.out.println("Grasna");
-    }
+public class Gallina extends Ave {
 
-    @Override
-    public void vuela() {
-        System.out.println("vuela con alas");
-    }
+    public static final Logger logger = LoggerFactory.getLogger(Gallina.class);
+
+        public Gallina(){
+            logger.debug("instanciando una gallina");
+            tipoSonido = new Grasnido();
+            tipoVuelo = new VueloConAlas();
+        }
+
 }
